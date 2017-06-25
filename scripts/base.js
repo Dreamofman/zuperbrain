@@ -41,14 +41,34 @@ function updateCurrency(cur='EUR')
         var allSels='<option value='+cur+' selected="selected">'+cur+'</option>';
             for (v in z) 
             {
-              allRates+= '<div class="col-xs-6 col-sm-4">'+v+':'+z[v]+'</div>'
+              //allRates+= '<div class="col-xs-6 col-sm-4">'+v+':'+z[v]+'</div>'
+              allRates+= '<div class="col-xs-6 col-sm-6 col-md-4">'
+
+              allRates+= '<div class="thumbnail text-center" >'
+              allRates+= '<img src="images/icons/flags/'+v+'.png">'
+              allRates+= '<div class="caption">'
+              allRates+= '<h3>'+v+'</h3>'
+              allRates+= '<p>'+z[v]+'</p>'
+              allRates+= '</div>'
+              allRates+= '</div>'
+              allRates+= '</div>'
+
+
               allSels += '<option value='+v+'>'+v+'</option>'
               
               
             }
         //$('#base').html('<div class="col-xs-12 col-sm-12 col-md-12">'+x+'</div>')
+        var searchCurrency = ''
+        searchCurrency+='<div class="col-xs-12 col-sm-12 col-md-12">'
+        searchCurrency+='<a href="#" class="thumbnail text-center">'
+        searchCurrency+='<img src="images/icons/flags/'+cur+'.png" ><h2>1 '+cur+'</h2>'
+        searchCurrency+='</a> '
+        searchCurrency+='</div>'
+
+        $('#searchCurrency').html(searchCurrency);
         $('#sel1').html(allSels)
-        $('#date').html('<div class="col-xs-12 col-sm-12 col-md-12"><h1>'+y+'</h1></div>')
+        $('#date').html('<div class="col-xs-12 col-sm-12 col-md-12">'+y+'</div>')
         $('#rates').html(allRates)
         //$('pre').text(allRates);
 
