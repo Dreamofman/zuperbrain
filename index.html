@@ -20,11 +20,18 @@
 
 
 
- <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+ 
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
 <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <meta name="msapplication-TileImage" content="images/icons/mstile-150x150.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
 <link rel="manifest" href="manifest.json">
 
 </head>
@@ -46,14 +53,23 @@
     
 </div>
   <div class="row" id="base">
-     
+
           <div class="col-xs-12 col-sm-12 col-md-12">
+
             <select class="form-control input-lg" id="sel1">
 
             </select>
           </div>
         
       
+  </div><Br>
+  <div class="row" id="money">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">$</span>
+        <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1" id="input1">
+        </div>
+    </div>
   </div>
 
   <div class="row text-center" id="date">
@@ -64,6 +80,7 @@
   </div>
  
 </div>
+<pre></pre>
 <script type="text/javascript" src="scripts/base.js"></script>
 </body>
 </html>

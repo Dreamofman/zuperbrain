@@ -18,6 +18,7 @@ var filesToCache = [
   '/',
   '/index.html',
   '/scripts/base.js',
+  '/scripts/money.js',
   '/css/normalize.css',
   '/images/icons/flags/AUD.png',
   '/images/icons/flags/BGN.png',
